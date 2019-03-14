@@ -1,104 +1,116 @@
 @import "./blogbottommenubutton.css";
+* {
+      margin: 0;
+}
 h1 {
       font-family: 'Raleway', sans-serif;
       padding-top: 50px;
-      color: rgb(68, 68, 68)
+      padding-bottom: 10px;
+      color: #4C4452;
 }
 h2 {
       font-family: 'Raleway', sans-serif;
-      color: rgb(68, 68, 68);
-
+      color: #4C4452;
+      padding: 20px;
 }
 h3 {
       font-family: 'Raleway', sans-serif;
-      color: rgb(68, 68, 68)
+      color: #4C4452;
+      padding: 20px;
 }
 h4 {
       font-family: 'Raleway', sans-serif;
-      color: rgb(68, 68, 68)
+      color: #4C4452;
+      padding: 20px;
 }
 h5 {
       font-family: 'Raleway', sans-serif;
-      color: rgb(68, 68, 68)
+      color: #4C4452;
+      padding: 20px;
 }
 h6 {
       font-family: 'Raleway', sans-serif;
-      color: rgb(68, 68, 68)
+      color: #4C4452;
+      padding: 20px;
 }
 p {
       font-family: 'Raleway', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      color: #2A322E;
 }
 li {
       font-family: 'Raleway', sans-serif;
+      color: #2A322E;
 }
 th {
       font-family: 'Raleway', sans-serif;
+      color: #2A322E;
 }
 td {
       font-family: 'Raleway', sans-serif;
+      color: #2A322E;
 }
 body {
       background: mintcream;
-      max-width: 700px;
-      min-width: 100px;
-      margin: 0 auto;
-      padding: 0 5px;
 }
 #newdate {
       text-align: center;
 }
 #Ruby {
       border-bottom: 2px dotted rgb(0, 0, 0);
-      max-width: 700px;
-      min-width: 100px;
       color: crimson;
 }
 #Sem1 {
       border-bottom: 2px dotted rgb(0, 0, 0);
-      max-width: 700px;
-      min-width: 100px;
       color: rgb(68, 68, 68);
 }
 #HTML {
       border-bottom: 2px dotted rgb(0, 0, 0);
-      max-width: 700px;
-      min-width: 100px;
       color: orange;
 }
 #CSS {
       border-bottom: 2px dotted rgb(0, 0, 0);
-      max-width: 700px;
-      min-width: 100px;
       color: royalblue;
 }
 #Rails {
       border-bottom: 2px dotted rgb(0, 0, 0);
-      max-width: 700px;
-      min-width: 100px;
       color: rgb(255, 40, 40);
 }
-.navbar {
-      overflow: hidden;
-      
-      background-color: #333;
-      position: fixed; 
-      top: 0; 
-      width: 100%;
-      max-width: 700px;
+#flexboxform {
+      display: flex;
+}
+#flexcontainer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 1000px;
       min-width: 100px;
-      padding: 0 auto;
-      z-index: 100;
+      margin: 0 auto;
+      padding: 0 5px;
+}
+.navbar {
+      display: flex;
+      justify-content: center;
+      align-content: flex-start;
+      position: fixed;
+      background-color: #333;
+      width: 100vw;
 }
 .navbar a {
-      float: left;
-      display: block;
+      display: inline-block;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      transition: all 0.7s ease;
 }
 .navbar a:hover {
       background:mintcream;
-      color: black;
+}
+@media screen and (max-width: 450px) {
+      .navbar {
+            display: none;
+      }
 }
 .bottombar {
       overflow: hidden;
@@ -142,4 +154,3 @@ table#tab1 {
       margin-left: auto;
       margin-right: auto;
 }
-

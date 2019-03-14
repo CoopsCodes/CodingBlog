@@ -1,0 +1,26 @@
+* {
+      margin: 0;
+}
+body {
+      z-index: 10;
+      font-family: 'Raleway', sans-serif;
+}
+#page-wrapper {
+      background-image: url("../john-fowler-1430222-unsplash.jpg");
+      background-position: center; 
+      background-size: cover;
+
+}
+/* this is that main div  */
+.page-wrapper {
+      display: flex;
+      justify-content: center;
+      background-image: url("../nils-schirmer-1429446-unsplash.jpg");
+      background-position: center; 
+      background-size: cover;
+      opacity: 0.1;
+}
+.intro {
+      z-index: -3;
+      font-family: 'Raleway', sans-serif;
+}
